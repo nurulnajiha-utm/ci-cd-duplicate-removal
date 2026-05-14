@@ -1,6 +1,10 @@
 import pandas as pd
 import os
-from src.remove_duplicates import remove_duplicates
+import sys
+
+sys.path.append(os.path.abspath("src"))
+
+from remove_duplicates import remove_duplicates
 
 def test_duplicate_removal():
     test_data = pd.DataFrame({
